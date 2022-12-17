@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="@dimen/sp15"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="@dimen/sp15"
+    android:layout_marginLeft="5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_outagedata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MON"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:elevation="@dimen/padding_10"
+         app:cardElevation="@dimen/padding_10">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:weightSum="4">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:layout_weight="1.4"
+                     android:fontFamily="monospace"
+                     android:paddingLeft="15dp"
+                     android:text="unScheduled"
+                     android:textColor="@color/outagetextcolor"
+                     android:textSize="20dp" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/padding_10"
+                 android:orientation="horizontal"
+                 android:weightSum="4">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:layout_weight="1.4"
+                     android:text="Feeder Name"
+                     android:textAlignment="textEnd"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp15"
+                     tools:ignore="RtlCompat" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1.8"
+                     android:text=":"
+                     android:textAlignment="center"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp15" />
+
+
+                 <TextView
+                     android:id="@+id/tv_OutageFeeder"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight=".8"
+                     android:text="csdjfhsdfsodfhsfsfdafahfladfsf"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/outagetextcolor"
+                     android:textSize="@dimen/sp15" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:weightSum="4">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1.4"
+                     android:gravity="center"
+
+                     android:text="Subdiv code"
+                     android:textAlignment="textEnd"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp15"
+                     tools:ignore="RtlCompat" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1.8"
+                     android:gravity="center"
+                     android:text=":"
+                     android:textAlignment="center"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp15" />
+
+
+                 <TextView
+                     android:id="@+id/tv_OutageSubdiv"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight=".8"
+                     android:gravity="center"
+                     android:text="540039"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/outagetextcolor"
+                     android:textSize="@dimen/sp15"
+                     tools:ignore="RtlCompat" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:weightSum="4">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1.4"
+                     android:gravity="center"
+                     android:text="From"
+                     android:textAlignment="textEnd"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp15"
+                     tools:ignore="RtlCompat" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1.8"
+                     android:gravity="center"
+                     android:text=":"
+                     android:textAlignment="center"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp15" />
+
+
+                 <TextView
+                     android:id="@+id/tv_OutageFrom"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight=".8"
+                     android:gravity="center"
+                     android:text="06-003-2021 11.15AM"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/outagetextcolor"
+                     android:textSize="@dimen/sp15"
+                     tools:ignore="RtlCompat" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="3dp"
+                 android:orientation="horizontal"
+                 android:weightSum="4">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1.4"
+                     android:gravity="center"
+                     android:text="TO"
+                     android:textAlignment="textEnd"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp15"
+                     tools:ignore="RtlCompat" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1.8"
+                     android:gravity="center"
+                     android:text=":"
+                     android:textAlignment="center"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp15" />
+
+
+                 <TextView
+                     android:id="@+id/tv_OutageTo"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight=".8"
+                     android:gravity="center"
+                     android:text="06-003-2021 11.15AM"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/outagetextcolor"
+                     android:textSize="@dimen/sp15"
+                     tools:ignore="RtlCompat" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="3dp"
+                 android:orientation="horizontal"
+                 android:weightSum="4">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1.4"
+                     android:gravity="center"
+                     android:text="Areas"
+                     android:textAlignment="textEnd"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp15"
+                     tools:ignore="RtlCompat" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1.8"
+                     android:gravity="center"
+                     android:text=":"
+                     android:textAlignment="center"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/sp15" />
+
+
+                 <TextView
+                     android:id="@+id/tv_OutageArea"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight=".8"
+                     android:gravity="center"
+                     android:text="danfsadfasdsdfsfsfsfsdffasfklas"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/outagetextcolor"
+                     android:textSize="@dimen/sp15"
+                     tools:ignore="RtlCompat" />
+
+             </LinearLayout>
+         </LinearLayout>
+
+     </androidx.cardview.widget.CardView>-->
+
+</LinearLayout>
